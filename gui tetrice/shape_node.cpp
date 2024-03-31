@@ -66,12 +66,48 @@ void shape_node::set_prev_shape(shape_node* v)
 shape_node& shape_node::operator=(const shape_node& other)
 {
     if (this != &other) {
-        P = other.P; // Copy piece object
-        next = other.next; // Copy next pointer
-        next_shape = other.next_shape; // Copy next_shape pointer
-        next_color = other.next_color; // Copy next_color pointer
-        prev_shape = other.prev_shape; // Copy prev_shape pointer
-        prev_color = other.prev_color; // Copy prev_color pointer
+        // Deep copy piece object
+        P = other.P;
+
+        // Deep copy next node
+        if (other.next != nullptr) {
+            next = new shape_node(*other.next);
+        }
+        else {
+            next = nullptr;
+        }
+
+        // Deep copy next_shape node
+        if (other.next_shape != nullptr) {
+            next_shape = new shape_node(*other.next_shape);
+        }
+        else {
+            next_shape = nullptr;
+        }
+
+        // Deep copy next_color node
+        if (other.next_color != nullptr) {
+            next_color = new shape_node(*other.next_color);
+        }
+        else {
+            next_color = nullptr;
+        }
+
+        // Deep copy prev_shape node
+        if (other.prev_shape != nullptr) {
+            prev_shape = new shape_node(*other.prev_shape);
+        }
+        else {
+            prev_shape = nullptr;
+        }
+
+        // Deep copy prev_color node
+        if (other.prev_color != nullptr) {
+            prev_color = new shape_node(*other.prev_color);
+        }
+        else {
+            prev_color = nullptr;
+        }
     }
     return *this;
 }

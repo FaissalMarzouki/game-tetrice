@@ -3,6 +3,8 @@
 #include "shape_node.h"
 #include "Plateau.h"
 #include<conio.h>
+#include <iostream>
+
 
 int main()
 {
@@ -14,7 +16,7 @@ int main()
 
     Color colors[] = { BLUE, YELLOW, RED, GREEN };
     static float rotation = 0.0f;
-    float x = 600.0f, y = 80.0f;
+    float x = 600.0f, y = 50.0f;
     bool canDPressKey = true;
     bool canGPressKey = true;
 
@@ -25,36 +27,43 @@ int main()
     //shape_node *randomNode=new shape_node(randowShape);
 
     Plateau* myPlateau=new Plateau();
+    Plateau* myChoisePlateau=new Plateau();
     
     
         
         /*-------------------------------------------*/
-        
+    for (int i = 0; i < 15; i++) {
+    piece randowShape1(4, 4);
+    randowShape1.draw();
+    piece copy(randowShape1.get_shape(), randowShape1.get_color(), randowShape1.get_X(), randowShape1.get_Y());
+    shape_node* copyNode = new shape_node(copy, NULL, NULL, NULL, NULL, NULL);
+    myChoisePlateau->set_head(copyNode);
+    myChoisePlateau->set_tail(copyNode);
 
-
-        myPlateau->afficher();
-    while (!WindowShouldClose())
+    while (!WindowShouldClose() && myChoisePlateau->get_head() != nullptr)
     {
         BeginDrawing();
         ClearBackground(RAYWHITE);
-
-        myPlateau->drawAll();
-
-
-        piece *randowShape1=new piece(4, 4, float(x), float(y));
+        myChoisePlateau->get_head()->get_piece().draw();
         if (IsMouseButtonPressed(MOUSE_BUTTON_RIGHT)) {
-            myPlateau->inserer_right(randowShape1);
+            myPlateau->inserer_right(&randowShape1);
+            myChoisePlateau->set_head(nullptr);
+            myChoisePlateau->set_tail(nullptr);
+             
 
         }else if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-            myPlateau->inserer_left(randowShape1);
+            myPlateau->inserer_left(&randowShape1);
+            myChoisePlateau->set_head(nullptr);
+            myChoisePlateau->set_tail(nullptr);
+
 
 
         }
 
 
 
-
         myPlateau->drawAll();
+        
 
        /* if (x < 0) x = 0;
         if (y < 0) y = 0;
@@ -107,7 +116,7 @@ int main()
         }*/
         EndDrawing();
     }
-    
+    }
     CloseWindow();
             myPlateau->afficher();
 

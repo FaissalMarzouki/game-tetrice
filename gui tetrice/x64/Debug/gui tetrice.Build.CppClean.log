@@ -1,19 +1,8 @@
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\vc143.pdb
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\vc143.idb
-c:\vcpkg\gui tetrice\gui tetrice\x64\debug\piece.obj
-c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.obj
-c:\vcpkg\gui tetrice\gui tetrice\x64\debug\plateau.obj
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\shape_node.obj
-c:\vcpkg\gui tetrice\x64\debug\raylib.dll
-c:\vcpkg\gui tetrice\x64\debug\gui tetrice.exe
-c:\vcpkg\gui tetrice\x64\debug\gui tetrice.pdb
-c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.ilk
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\plateau.obj
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\piece.obj
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\cl.command.1.tlog
-c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\cl.items.tlog
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\cl.read.1.tlog
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\cl.write.1.tlog
-c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\gui tetrice.write.1u.tlog
-c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\link.command.1.tlog
-c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\link.read.1.tlog
-c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\link.secondary.1.tlog
-c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\link.write.1.tlog

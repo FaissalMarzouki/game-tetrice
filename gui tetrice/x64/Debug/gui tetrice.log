@@ -1,2 +1,4 @@
-﻿  gui tetrice.cpp
+﻿  Plateau.cpp
+  gui tetrice.cpp
+  Generating Code...
   gui tetrice.vcxproj -> C:\vcpkg\gui tetrice\x64\Debug\gui tetrice.exe

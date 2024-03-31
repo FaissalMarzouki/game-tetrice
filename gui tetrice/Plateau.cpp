@@ -42,12 +42,13 @@ void Plateau::set_tail(shape_node* queue)
 }
 piece* Plateau::makePosition(piece* P, char b) {
 	piece* newPiece = new piece(*P);
-
-	if (b == 'r')
+	newPiece->set_Y(200.0f);
+	if (b == 'r'){
 		newPiece->set_X(this->middle + piece::spaceRight);
-	else if (b == 'l')
+	}
+	else if (b == 'l'){
 		newPiece->set_X(this->middle - piece::spaceLeft);
-
+	}
 	return newPiece; 
 }
 

@@ -16,14 +16,14 @@ piece::piece(shape s, shape_color c, float x, float y) {
     this->y = y;
 }
 
-piece::piece(int shapes_count, int colors_count,float x, float y) {
+piece::piece(int shapes_count, int colors_count) {
     int s = (rand() % shapes_count) + 1;
     int c = (rand() % colors_count) + 1;
 
     _shape = static_cast<shape>(s);
     _color = static_cast<shape_color>(c);
-    this->x = x;
-    this->y = y;
+    this->x = 100.0f;
+    this->y = 100.0f;
 
 }
 piece::piece(const piece& other) {
@@ -48,20 +48,19 @@ void piece::set_X(float x) {
 void piece::set_Y(float y) {
     this->y = static_cast<float>(y);
 }
-
-float piece::get_X() {
-    return this->x;
+float piece::get_X() const {
+    return x;
 }
 
-float piece::get_Y() {
-    return this->y;
+float piece::get_Y() const {
+    return y;
 }
 
-shape piece::get_shape() {
+shape piece::get_shape() const {
     return _shape;
 }
 
-shape_color piece::get_color() {
+shape_color piece::get_color() const {
     return _color;
 }
 
@@ -97,13 +96,13 @@ void piece::afficher() const{
     }
     switch (_shape) {
     case Cercle:
-        cout << "R";
+        cout << "C";
         break;
     case Rhombus:
-        cout << "L";
+        cout << "R";
         break;
     case Square:
-        cout << "C";
+        cout << "S";
         break;
     case Triangle:
         cout << "T";
@@ -136,16 +135,16 @@ void piece::draw() {
 
     switch (_shape) {
     case Cercle:
-        DrawCircle((float)(this->x), (float)(this->y), 20.0f, raylibColor);
+        DrawCircle(static_cast<float>(this->x), static_cast<float>(this->y), 20.0f, raylibColor);
         break;
     case Rhombus:
-        DrawRectanglePro(Rectangle{ (float)(this->x), (float)(this->y), 40.0f, 40.0f }, { 20.0f, 20.0f }, 45.0f, raylibColor);
+        DrawRectanglePro(Rectangle{ static_cast<float>(this->x), static_cast<float>(this->y), 40.0f, 40.0f }, { 20.0f, 20.0f }, 45.0f, raylibColor);
         break;
     case Square:
-        DrawRectangleRec(Rectangle{ (float)(this->x), (float)(this->y), 40.0f, 40.0f }, raylibColor);
+        DrawRectangleRec(Rectangle{ static_cast<float>(this->x), static_cast<float>(this->y), 40.0f, 40.0f }, raylibColor);
         break;
     case Triangle:
-        DrawTriangle({ (float)(this->x), (float)(this->y) }, { (float)(this->x) + 40.0f, (float)(this->y) }, { (float)(this->x) + 20.0f, (float)(this->y) - 35.0f }, raylibColor);
+        DrawTriangle({ static_cast<float>(this->x), static_cast<float>(this->y) }, { static_cast<float>(this->x) + 40.0f, static_cast<float>(this->y) }, { static_cast<float>(this->x) + 20.0f, static_cast<float>(this->y) - 35.0f }, raylibColor);
         break;
     default:
         break;
