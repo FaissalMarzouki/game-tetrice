@@ -1,0 +1,2 @@
+C:\Users\LENOVO\source\repos\gui tetrice\gui tetrice\x64\Debug\gui tetr.6F3B45B0.Up2Date
+C:\vcpkg\gui tetrice\gui tetrice\x64\Debug\gui tetr.6F3B45B0.Up2Date
