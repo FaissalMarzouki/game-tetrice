@@ -1,12 +1,10 @@
 #include "piece.h"
 #include "raylib.h"
-float piece::spaceLeft = 0.0f;
-float piece::spaceRight = 80.0f;
+
 piece::piece() {
     _color = color_ni;
     _shape = shape_ni;
-    x = 0.0f;
-    y = 0.0f;
+
 }
 
 piece::piece(shape s, shape_color c, float x, float y) {
@@ -19,18 +17,14 @@ piece::piece(shape s, shape_color c, float x, float y) {
 piece::piece(int shapes_count, int colors_count) {
     int s = (rand() % shapes_count) + 1;
     int c = (rand() % colors_count) + 1;
-
     _shape = static_cast<shape>(s);
     _color = static_cast<shape_color>(c);
-    this->x = 100.0f;
-    this->y = 100.0f;
-
 }
 piece::piece(const piece& other) {
-    _shape = other._shape;
-    _color = other._color;
     x = other.x;
     y = other.y;
+    _shape = other._shape;
+    _color = other._color;
 }
 
 void piece::set_shape(shape s) {
@@ -40,7 +34,6 @@ void piece::set_shape(shape s) {
 void piece::set_color(shape_color c) {
     _color = c;
 }
-
 void piece::set_X(float x) {
     this->x = static_cast<float>(x);
 }
@@ -113,41 +106,4 @@ void piece::afficher() const{
     cout << "\033[0m  ";
 }
 
-void piece::draw() {
-    Color raylibColor;
-    switch (_color) {
-    case Red:
-        raylibColor = RED;
-        break;
-    case Green:
-        raylibColor = GREEN;
-        break;
-    case Yellow:
-        raylibColor = YELLOW;
-        break;
-    case Blue:
-        raylibColor = BLUE;
-        break;
-    default:
-        raylibColor = WHITE;
-        break;
-    }
-
-    switch (_shape) {
-    case Cercle:
-        DrawCircle(static_cast<float>(this->x), static_cast<float>(this->y), 20.0f, raylibColor);
-        break;
-    case Rhombus:
-        DrawRectanglePro(Rectangle{ static_cast<float>(this->x), static_cast<float>(this->y), 40.0f, 40.0f }, { 20.0f, 20.0f }, 45.0f, raylibColor);
-        break;
-    case Square:
-        DrawRectangleRec(Rectangle{ static_cast<float>(this->x), static_cast<float>(this->y), 40.0f, 40.0f }, raylibColor);
-        break;
-    case Triangle:
-        DrawTriangle({ static_cast<float>(this->x), static_cast<float>(this->y) }, { static_cast<float>(this->x) + 40.0f, static_cast<float>(this->y) }, { static_cast<float>(this->x) + 20.0f, static_cast<float>(this->y) - 35.0f }, raylibColor);
-        break;
-    default:
-        break;
-    }
-}
 

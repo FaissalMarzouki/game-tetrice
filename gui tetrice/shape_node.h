@@ -1,11 +1,4 @@
 #pragma once
-#ifndef SHAPE_NODE_H
-#define SHAPE_NODE_H
-
-// Class definition and other header contents
-
-#endif // SHAPE_NODE_H
-
 #include <iostream>
 #include "piece.h"
 using namespace std;
@@ -14,15 +7,22 @@ class shape_node
 {
 private:
     piece P;
-    shape_node* next;
+    shape_node* next;//zr9a
     shape_node* next_shape;
     shape_node* next_color;
     shape_node* prev_color;
     shape_node* prev_shape;
 
+
 public:
+    int imp = 0;
+    int icp = 0;
+    int isp = 0;
     // constructur
-    shape_node(piece pi, shape_node*, shape_node*, shape_node*, shape_node*, shape_node*);
+    shape_node(piece Pi, shape_node*, shape_node*, shape_node*, shape_node*, shape_node*);
+
+    // getters
+
 
     piece get_piece();
 
@@ -49,5 +49,4 @@ public:
     void set_prev_color(shape_node* v);
 
     void set_prev_shape(shape_node* v);
-    shape_node& operator=(const shape_node& other);
 };

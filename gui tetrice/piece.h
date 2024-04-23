@@ -26,10 +26,7 @@ private:
     shape _shape;
     shape_color _color;
     float x, y;
-
 public:
-    static float spaceLeft;
-    static float spaceRight;
     piece();
     piece(shape s, shape_color c,float x,float y);
     piece(int shapes_count, int colors_count);
@@ -44,10 +41,6 @@ public:
     shape_color get_color() const;
     piece& operator=(const piece& other);
     void afficher() const;
-    void draw();
     ~piece();
-
-
-
 };
 

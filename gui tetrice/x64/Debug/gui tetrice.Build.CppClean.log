@@ -3,6 +3,17 @@ c:\vcpkg\gui tetrice\gui tetrice\x64\debug\vc143.idb
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\shape_node.obj
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\plateau.obj
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\piece.obj
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\menu.obj
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.obj
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\game.obj
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\design.obj
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\design.nativecodeanalysis.xml
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\game.nativecodeanalysis.xml
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.nativecodeanalysis.xml
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\menu.nativecodeanalysis.xml
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\piece.nativecodeanalysis.xml
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\plateau.nativecodeanalysis.xml
+c:\vcpkg\gui tetrice\gui tetrice\x64\debug\shape_node.nativecodeanalysis.xml
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\cl.command.1.tlog
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\cl.read.1.tlog
 c:\vcpkg\gui tetrice\gui tetrice\x64\debug\gui tetrice.tlog\cl.write.1.tlog

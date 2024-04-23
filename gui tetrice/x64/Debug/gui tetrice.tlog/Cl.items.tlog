@@ -1,4 +1,7 @@
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp;C:\vcpkg\gui tetrice\gui tetrice\x64\Debug\Design.obj
 C:\vcpkg\gui tetrice\gui tetrice\gui tetrice.cpp;C:\vcpkg\gui tetrice\gui tetrice\x64\Debug\gui tetrice.obj
+C:\vcpkg\gui tetrice\gui tetrice\Menu.cpp;C:\vcpkg\gui tetrice\gui tetrice\x64\Debug\Menu.obj
+C:\vcpkg\gui tetrice\gui tetrice\Party.cpp;C:\vcpkg\gui tetrice\gui tetrice\x64\Debug\Party.obj
 C:\vcpkg\gui tetrice\gui tetrice\piece.cpp;C:\vcpkg\gui tetrice\gui tetrice\x64\Debug\piece.obj
 C:\vcpkg\gui tetrice\gui tetrice\Plateau.cpp;C:\vcpkg\gui tetrice\gui tetrice\x64\Debug\Plateau.obj
 C:\vcpkg\gui tetrice\gui tetrice\shape_node.cpp;C:\vcpkg\gui tetrice\gui tetrice\x64\Debug\shape_node.obj

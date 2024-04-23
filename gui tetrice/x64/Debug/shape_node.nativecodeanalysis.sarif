@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33521.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/vcpkg/gui tetrice/gui tetrice/shape_node.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "faa5d7522c6df67d728442e295e8fde88b43a6ede5e268ebae42f2f5440eb08e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vcpkg/gui tetrice/gui tetrice/shape_node.h"
+          },
+          "hashes": {
+            "sha-256": "e8c07ee5664b337e6a7d1b9c7ec7578a2f8931846c52cef4be4a14f6f9643e7e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vcpkg/gui tetrice/gui tetrice/piece.h"
+          },
+          "hashes": {
+            "sha-256": "ffd3196fd6d56e920bbb727a804cfe6110a146d07c5f4196691e6fbf0cd4da92"
+          }
+        }
+      ]
+    }
+  ]
+}

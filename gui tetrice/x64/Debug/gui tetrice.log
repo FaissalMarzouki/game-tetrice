@@ -1,4 +1,31 @@
-﻿  Plateau.cpp
+﻿  Design.cpp
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(19,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(19,13): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(69,74): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(69,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(605,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(607,63): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(607,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(610,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(610,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(613,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(613,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(616,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(616,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(619,56): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(619,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(622,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(622,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(633,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(633,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(659,97): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(659,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(661,135): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(661,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(694,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(786,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(789,45): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\vcpkg\gui tetrice\gui tetrice\Design.cpp(791,53): warning C4305: 'argument': truncation from 'double' to 'float'
   gui tetrice.cpp
   Generating Code...
   gui tetrice.vcxproj -> C:\vcpkg\gui tetrice\x64\Debug\gui tetrice.exe

@@ -1,0 +1,197 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "Return value ignored: '_getch'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/vcpkg/gui tetrice/gui tetrice/Game.cpp"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 2,
+                  "endLine": 7,
+                  "endColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Game::{ctor}",
+                  "decoratedName": "??0Game@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "Return value ignored: '_getch'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/vcpkg/gui tetrice/gui tetrice/Game.cpp"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 2,
+                  "endLine": 51,
+                  "endColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Game::new_game",
+                  "decoratedName": "?new_game@Game@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "Return value ignored: '_getch'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/vcpkg/gui tetrice/gui tetrice/Game.cpp"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 2,
+                  "endLine": 56,
+                  "endColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Game::load_games",
+                  "decoratedName": "?load_games@Game@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "Return value ignored: '_getch'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/vcpkg/gui tetrice/gui tetrice/Game.cpp"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 2,
+                  "endLine": 61,
+                  "endColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Game::show_scores",
+                  "decoratedName": "?show_scores@Game@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33521.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/vcpkg/gui tetrice/gui tetrice/Game.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "a39c8a5a6119e1b7bcbdae1c8466e3fd3249ffd31db314fd94d7e393eecdf585"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vcpkg/gui tetrice/gui tetrice/game.h"
+          },
+          "hashes": {
+            "sha-256": "c3c318a010c36e894988f5dd29c94d2b9c83137ba46527f558ead04fff5401e9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vcpkg/gui tetrice/gui tetrice/menu.h"
+          },
+          "hashes": {
+            "sha-256": "0dfeb9ecbfc39987b5ea582f37d634309e0608e8b66d86743a26c6e98a474985"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vcpkg/gui tetrice/gui tetrice/party.h"
+          },
+          "hashes": {
+            "sha-256": "bb64d31c192f63a0a9f0543bdcc9a6eb29728f95ddb674379859c5013dd20411"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vcpkg/gui tetrice/gui tetrice/plateau.h"
+          },
+          "hashes": {
+            "sha-256": "6cc42931dbd80b9ca643c8099100e5c203709d685ccf7135e64ed3d66c46e9bd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vcpkg/gui tetrice/gui tetrice/shape_node.h"
+          },
+          "hashes": {
+            "sha-256": "e8c07ee5664b337e6a7d1b9c7ec7578a2f8931846c52cef4be4a14f6f9643e7e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vcpkg/gui tetrice/gui tetrice/piece.h"
+          },
+          "hashes": {
+            "sha-256": "ffd3196fd6d56e920bbb727a804cfe6110a146d07c5f4196691e6fbf0cd4da92"
+          }
+        }
+      ]
+    }
+  ]
+}
